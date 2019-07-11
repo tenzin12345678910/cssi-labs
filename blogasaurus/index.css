@@ -6,14 +6,20 @@ h1{
   color:#931621;
   font-size: 50px;
 }
-h2{
+h2,h3{
   color:#931621;
   font-family: 'Fjalla One', sans-serif;
 }
+#c{
+  text-align: left;
+  margin-left: 10%;
+}
 p{
   color:#555b6e;
+  text-align: justify;
+}
+#f{
   font-size: 20px;
-
 }
 #round{
   border-radius: 28px;
@@ -46,10 +52,37 @@ margin:0px;
 }
 #left{
   text-align: right;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 #ls{
   text-align:left;
+  padd
 }
 br{
   height:30px;
+}
+.one{
+  text-align: left;
+  width:30%;
+  color:#931621;
+  padding-left:0px;
+  margin-left: 0px;
+}
+table{
+  text-align: left;
+}
+.two{
+  text-align: left;
+  width:70%;
+  color:#931621;
+}
+#color{
+  color:black;
+}
+footer{
+  background-color: #d5b0ac;
+  height:90px;
+  width:100%;
+  text-align:center;
 }

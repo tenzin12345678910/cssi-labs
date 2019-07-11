@@ -19,16 +19,18 @@ import random
 
 def get_player_move():
     """Asks the user to enter a move as 'r', 'p', or 's', and return it"""
-    return raw_input("Choose your move [r|p|s]: ").lower()
+    return [raw_input("Choose your move [r|p|s]: ").lower()]
 
 
 def get_computer_move():
     """Randomly generates the computer's move and
     returns it in the form of 'r', 'p', or 's'"""
-    return "rps"[random.randint(0,2)]
+    index = random.randint(0,2)
+    computer = "rps" [index]
+    return (computer)
 
 
-def determine_winner(player_move, comp_move):
+def determine_winner(get_player_move, get_computer_move):
     """Takes in a player move and computer move each as 'r', 'p', or 's',
     and returns the winner as 'player', 'computer', or 'tie'"""
     if player_move == comp_move:
@@ -57,6 +59,12 @@ def get_move_name(short_move):
         return "Paper"
     else:
         return "Scissors"
+
+print get_player_move()
+print("computer move " + get_computer_move())
+print(determine_winner(get_player_move, get_player_move))
+# print_scoreboard()
+# get_move_name()
 
 
 # Write your code below - make RPS happen using the functions above!
